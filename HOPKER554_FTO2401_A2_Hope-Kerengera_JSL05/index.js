@@ -42,7 +42,12 @@ function generatePlaylist(guardians, songs) {
 
         playlist.forEach(song => {
             const songItem = document.createElement("li"); //list items
-            songItem.innerHTML = `${song.title} - ${song.artist}`;
+            const artistSpan = document.createElement("span"); //creating a span to cover just the artist
+            artistSpan.textContent = song.artist;
+            artistSpan.style.fontStyle = "italic" //span content style
+            artistSpan.style.fontSize = "0.8em"
+            songItem.innerHTML = `${song.title} - `;
+            songItem.appendChild(artistSpan); //add artist span to the end of list item
             playlistSongs.appendChild(songItem); //add song to the end of the list
         });
 

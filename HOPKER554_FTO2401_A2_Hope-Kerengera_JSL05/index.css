@@ -14,6 +14,10 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for headings */
 }
 
+h2 {
+    color:  #FFF0B3;
+}
+
 .playlist {
     margin: 20px;
     padding: 20px; /* Increased padding */
